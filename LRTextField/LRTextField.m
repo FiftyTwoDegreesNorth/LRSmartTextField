@@ -95,11 +95,13 @@
     if ( !_format )
     {
         [super setText:text];
-        return;
+    }else
+    {
+        [self renderString:text];
+        [self autoFillFormat];
     }
-    
-    [self renderString:text];
-    [self autoFillFormat];
+    [self updatePlaceholder];
+    [self updateHint];
 }
 
 - (void) setFont:(UIFont *)font
