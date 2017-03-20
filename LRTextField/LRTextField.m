@@ -193,7 +193,7 @@
 {
     [self propertyInit];
     
-    self.backgroundColor = [UIColor clearColor];
+    //self.backgroundColor = [UIColor clearColor];
     
     self.placeholderLabel = [UILabel new];
     self.placeholderLabel.backgroundColor = [UIColor clearColor];
